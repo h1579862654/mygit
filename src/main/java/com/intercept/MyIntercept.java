@@ -15,13 +15,13 @@ import javax.servlet.http.HttpServletResponse;
 public class MyIntercept implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        System.out.println("preHandle方法");
+        System.out.println("preHandle---方法");
         return true;
     }
 
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-        System.out.println("postHandle方法");
+        System.out.println("postHandle---方法");
     }
 
     @Override
